@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_of_star">60dp</dimen>
+    <dimen name="size_of_star_small">40dp</dimen>
+    <dimen name="text_size_labels">16sp</dimen>
+    <dimen name="text_size_item">16sp</dimen>
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_4dp">4dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="size_16dp">16dp</dimen>
+    <dimen name="size_42dp">42dp</dimen>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <ImageView
+            android:id="@+id/imageViewBigPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_0dp"
+            android:contentDescription="@string/image_big_poster"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:srcCompat="@drawable/logo" />
+
+
+        <ImageView
+            android:id="@+id/imageViewAddToFavourite"
+            android:layout_width="@dimen/size_of_star_small"
+            android:layout_height="@dimen/size_of_star_small"
+            android:contentDescription="@string/image_favourite_movie"
+            android:layout_marginEnd="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:onClick="onClickChangeFavourite"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBigPoster"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBigPoster"
+            app:srcCompat="@drawable/yellow_fav" />
+
+    <ScrollView
+        android:id="@+id/scrollViewInfo"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="@dimen/size_0dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewBigPoster"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            layout="@layout/movie_info"
+            android:id="@+id/movieInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+</ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
