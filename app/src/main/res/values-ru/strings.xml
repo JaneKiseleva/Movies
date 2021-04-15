@@ -21,4 +21,5 @@
     <string name="release_date">Дата релиза</string>
     <string name="label_description">Описание:</string>
     <string name="over_view">Описание</string>
+    <string name="label_trailers">" Трейлеры:"</string>
 </resources>
